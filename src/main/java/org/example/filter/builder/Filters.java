@@ -19,16 +19,16 @@ public final class Filters {
     }
 
     // logical
-    public static Filter and(Filter... f) {
-        return new AndFilter(f);
+    public static Filter and(Filter... filters) {
+        return new AndFilter(filters);
     }
 
-    public static Filter or (Filter... f) {
-        return new OrFilter(f);
+    public static Filter or (Filter... filters) {
+        return new OrFilter(filters);
     }
 
-    public static Filter not(Filter f) {
-        return new NotFilter(f);
+    public static Filter not(Filter filter) {
+        return new NotFilter(filter);
     }
 
     // property entry‑point

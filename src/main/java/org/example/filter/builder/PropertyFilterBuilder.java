@@ -14,20 +14,20 @@ public final class PropertyFilterBuilder {
         return new PresentFilter(name);
     }
 
-    public Filter eq(String v) {
-        return new EqualsFilter(name, v);
+    public Filter eq(String value) {
+        return new EqualsFilter(name, value);
     }
 
-    public Filter lt(String v) {
-        return new LessThanFilter(name, v);
+    public Filter lt(String value) {
+        return new LessThanFilter(name, value);
     }
 
-    public Filter gt(String v) {
-        return new GreaterThanFilter(name, v);
+    public Filter gt(String value) {
+        return new GreaterThanFilter(name, value);
     }
 
-    public Filter matches(String r) {
-        return new RegexFilter(name, r);
+    public Filter matches(String value) {
+        return new RegexFilter(name, value);
     }
 
 }
